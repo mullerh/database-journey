@@ -86,14 +86,14 @@
 
 	$sql = "SELECT * FROM movies WHERE " . movie_id_search_string($searched_movie_ids);
 
-	echo $sql . "<br>";
-
 	$result = $con->prepare($sql);
 	$result->execute();
 
 	while($row = $result->fetch(PDO::FETCH_ASSOC)) {
 		echo "Title: " . $row['name'] . ", Rating: " . $row['rating'] . ", Genre: " . $row['genre'] . "<br>";
 	}
+
+	echo '<br><form action="website.php" method="post"><input type="submit" value="Home Page"/></form>';
 
 /*
 (things with ## around them are the variable elements)

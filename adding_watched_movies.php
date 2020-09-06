@@ -38,7 +38,7 @@
 
 	} elseif(! isset($_SESSION['user_id'])) {
 
-		echo "You need to be logged in for movie suggestions.";
+		echo "You need to be logged to add watched movies.";
 		echo '<form action="website.php" method="post"><input type="submit" value="Home Page"/></form>';
 
 	} else {

@@ -18,7 +18,7 @@
 	if(isset($_SESSION['user_id'])) {
 		$user_id = $_SESSION['user_id'];
 		echo '<form action="logout.php" method="post"><input type="submit" value="Log Out"/></form>';
-		echo '<form action="watched_movies.php" method="post"><input type="submit" value="Favourite Movies"/></form>';
+		echo '<form action="watched_movies.php" method="post"><input type="submit" value="Watched Movies"/></form>';
 	//otherwise let them login/signin
 	} else {
 		echo '<form action="signin.php" method="post"><input type="submit" value="Sign in"/></form>';

@@ -20,4 +20,6 @@
 	echo "<br>";
 
 	echo '<input type="submit" value="Suggest Movies"/></form>';
+
+	echo '<br><form action="website.php" method="post"><input type="submit" value="Home Page"/></form>';
 ?>
